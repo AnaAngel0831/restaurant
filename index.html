@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>La Pizzeria Ana</title>
+  <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color:#333" >
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script defer src="scripts/main1.js">
+
+    </script>
+
+  <div class="containerr" id="navbar">
+  <div class="sticky">
+  <div class="content" >
+  <a href="index.html">Home</a>
+  <a href="rezervari.html">Rezervari</a>
+  <a href="meniu.html">Meniuri</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="desprenoi.html">Despre Noi</a>
+  <a href="contact.html">Contact</a>
+  </div>
+  </div>
+    <div class="clearfix"></div>
+
+
+  <div class="pam">
+
+  <div class="imgcontainer">
+
+    </div>
+  <img src="images/pizzaa.jpg" alt="pizza" style="width:100%;">
+  <div class="contentt" style="box-sizing:border-box;">
+    <h1 style="font-style:bold;">BEST IN TOWN SINCE 1999</h1>
+    <br>
+    <p style="font-style:italic; text-align:left;"> </p>
+    <p style="font-style:bold;"> Program</p>
+    <ul>
+      <li>Luni:9:00-23:00</li>
+      <li>Marti:9:00-23:00</li>
+      <li>Miercuri:9:00-23:00</li>
+      <li>Joi:9:00-23:00</li>
+      <li>Vineri:9:00-23:00</li>
+      <li>Sambata:9:00-23:00</li>
+      <li>Duminica:9:00-23:00</li>
+    </ul>
+    </div>
+</div>
+
+</div>
+<button id="hide">HIDE</button>
+<button id="show">SHOW</button>
+
+<button>Click to hide paragraph</button>
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
